@@ -1,0 +1,569 @@
+/* ==============================================================
+   teachers.css – Star Shia Quran Academy (Teachers & Detail)
+   ============================================================== */
+
+/* ---------- HERO with background image ---------- */
+.teachers-hero {
+    position: relative;
+    padding: 5rem 0 4rem;
+    background: url('../images/hero/teachers-hero-bg.webp') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+.teachers-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.teachers-hero-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.teachers-hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.teachers-hero-content h1 {
+    color: #fff;
+    margin: 0.5rem 0 1rem;
+}
+
+.teachers-hero-content h1 span {
+    color: #f5e6c8;
+}
+
+.teachers-hero-desc {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+/* ---------- TEACHER GRID ---------- */
+.teacher-listing {
+    padding: 4rem 0;
+    background: #faf8f5;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.teacher-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.teacher-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-card .teacher-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background: #f0ede8;
+}
+
+.teacher-card .teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.teacher-card:hover .teacher-image img {
+    transform: scale(1.04);
+}
+
+.teacher-card .teacher-info {
+    padding: 1.5rem 1rem 1.8rem;
+}
+
+.teacher-card .teacher-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.teacher-card .teacher-info .teacher-title {
+    display: block;
+    font-size: 0.85rem;
+    color: #b8860b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-card .teacher-info p {
+    font-size: 0.95rem;
+    color: #4e4e62;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.teacher-card .teacher-info .btn {
+    margin-top: 0.2rem;
+}
+
+/* ---------- TEACHER DETAIL PAGE ---------- */
+.teacher-detail-section {
+    padding: 3rem 0 4rem;
+    background: #fff;
+}
+
+.teacher-detail-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #2a6b3b;
+}
+
+.teacher-detail-content {
+    animation: fadeSlide 0.5s ease;
+}
+
+.teacher-detail-content .detail-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+.teacher-detail-content .detail-image {
+    flex: 0 0 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.teacher-detail-content .detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.teacher-detail-content .detail-info {
+    flex: 1;
+}
+
+.teacher-detail-content .detail-info h1 {
+    margin: 0 0 0.2rem;
+}
+
+.teacher-detail-content .detail-info .detail-title {
+    display: block;
+    font-size: 1.1rem;
+    color: #b8860b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-detail-content .detail-info .detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+    color: #3d3d4e;
+}
+
+.teacher-detail-content .detail-info .detail-meta i {
+    color: #b8860b;
+    width: 1.2rem;
+}
+
+.teacher-detail-content .detail-info .detail-bio {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2e2e3e;
+    margin: 1rem 0;
+}
+
+.teacher-detail-content .detail-info .detail-specialties {
+    margin: 1.2rem 0;
+}
+
+.teacher-detail-content .detail-info .detail-specialties h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.teacher-detail-content .detail-info .detail-specialties ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+}
+
+.teacher-detail-content .detail-info .detail-specialties li {
+    background: #f8f4ed;
+    padding: 0.3rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1e1e2a;
+}
+
+.teacher-detail-content .detail-info .btn {
+    margin-top: 0.5rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .teacher-detail-content .detail-header {
+        flex-direction: column;
+    }
+
+    .teacher-detail-content .detail-image {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .teachers-hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .teachers-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .teachers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .teachers-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ==============================================================
+   TEACHER DETAIL - UPDATED LAYOUT (matching course detail)
+   ============================================================== */
+
+/* ---------- Teacher Header ---------- */
+.teacher-detail-content .detail-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.teacher-detail-content .detail-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.teacher-detail-content .detail-header-content h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0.2rem;
+    color: #1e1e2a;
+    font-family: 'Amiri', serif;
+}
+
+.teacher-detail-content .detail-title {
+    display: block;
+    font-size: 1.2rem;
+    color: #b8860b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.teacher-detail-content .detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    color: #3d3d4e;
+    margin-top: 0.5rem;
+}
+
+.teacher-detail-content .detail-meta i {
+    color: #b8860b;
+    width: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+/* ---------- Full Width Image ---------- */
+.teacher-detail-content .detail-image-full {
+    margin: 2rem 0 3rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.teacher-detail-content .detail-image-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.teacher-detail-content .detail-image-full:hover img {
+    transform: scale(1.02);
+}
+
+/* ---------- Full Width Content ---------- */
+.teacher-detail-content .detail-content-full {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.teacher-detail-content .detail-description-full {
+    font-size: 1.1rem;
+    line-height: 2.2;
+    color: #2e2e3e;
+}
+
+.teacher-detail-content .detail-description-full p {
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+}
+
+/* ---------- Specialties ---------- */
+.teacher-detail-content .detail-specialties {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    background: #f8f4ed;
+    border-radius: 16px;
+}
+
+.teacher-detail-content .detail-specialties h3 {
+    font-size: 1.3rem;
+    color: #1e1e2a;
+    margin-bottom: 1rem;
+    font-family: 'Amiri', serif;
+}
+
+.teacher-detail-content .detail-specialties h3 i {
+    color: #b8860b;
+    margin-right: 0.5rem;
+}
+
+.teacher-detail-content .detail-specialties ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.teacher-detail-content .detail-specialties ul li {
+    background: #fff;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1e1e2a;
+    border: 1px solid #e0dbd3;
+    letter-spacing: 0.02em;
+}
+
+/* ---------- Additional Teacher Content ---------- */
+.teacher-detail-content .teacher-additional {
+    margin: 2rem 0;
+}
+
+.teacher-detail-content .teacher-additional h3 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: #1e1e2a;
+    font-family: 'Amiri', serif;
+}
+
+.teacher-detail-content .teacher-additional ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    list-style: none;
+}
+
+.teacher-detail-content .teacher-additional ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.9;
+    letter-spacing: 0.02em;
+    word-spacing: 0.08em;
+}
+
+.teacher-detail-content .teacher-additional ul li::before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: #2a6b3b;
+    font-size: 1.1rem;
+}
+
+/* ---------- Typography Enhancements ---------- */
+.teacher-detail-content .detail-description-full strong {
+    color: #1e1e2a;
+    font-weight: 700;
+}
+
+.teacher-detail-content .detail-description-full a {
+    color: #2a6b3b;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.teacher-detail-content .detail-description-full a:hover {
+    color: #b8860b;
+}
+
+/* ---------- CTA Buttons ---------- */
+.teacher-detail-content .detail-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 3px solid #f0ebe1;
+    justify-content: center;
+}
+
+.teacher-detail-content .btn-large {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.teacher-detail-content .detail-cta .btn-outline {
+    background: transparent;
+    color: #2a6b3b;
+    border: 2px solid #2a6b3b;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+}
+
+.teacher-detail-content .detail-cta .btn-outline:hover {
+    background: #2a6b3b;
+    color: #fff;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .teacher-detail-content .detail-header-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .teacher-detail-content .detail-meta {
+        gap: 1rem;
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teacher-detail-content .detail-image-full {
+        margin: 1.5rem 0 2rem;
+        border-radius: 12px;
+    }
+
+    .teacher-detail-content .detail-image-full img {
+        max-height: 350px;
+    }
+
+    .teacher-detail-content .detail-description-full {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .teacher-detail-content .detail-specialties {
+        padding: 1.2rem 1.2rem;
+    }
+
+    .teacher-detail-content .detail-specialties ul {
+        gap: 0.6rem;
+    }
+
+    .teacher-detail-content .detail-specialties ul li {
+        font-size: 0.85rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .teacher-detail-content .detail-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .teacher-detail-content .detail-cta .btn {
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .teacher-detail-content .btn-large {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    .teacher-detail-content .teacher-additional ul {
+        margin-left: 0.5rem;
+    }
+
+    .teacher-detail-content .teacher-additional ul li {
+        padding-left: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-detail-content .detail-header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .teacher-detail-content .detail-description-full {
+        font-size: 0.95rem;
+        line-height: 1.9;
+    }
+
+    .teacher-detail-content .detail-specialties {
+        padding: 1rem;
+    }
+
+    .teacher-detail-content .detail-specialties ul li {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.8rem;
+    }
+
+    .teacher-detail-content .teacher-additional h3 {
+        font-size: 1.2rem;
+    }
+
+    .teacher-detail-content .teacher-additional ul li {
+        padding-left: 1.5rem;
+        font-size: 0.95rem;
+    }
+}

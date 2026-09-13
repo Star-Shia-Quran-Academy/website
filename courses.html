@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-94YWW6T8WW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-94YWW6T8WW');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo/star-shia-logo.avif" type="image/avif" />
+    <title>Courses – Star Shia Quran Academy | Shia Quran & Islamic Studies</title>
+    <meta name="description" content="Explore our comprehensive Shia Quran Academy courses: Tajweed, Tafseer, Arabic, Islamic studies, Fiqh, Hadith, and more. Enroll in authentic Shia Islamic education." />
+    <meta name="keywords" content="Shia Quran Academy, online Quran courses, Tajweed, Tafseer, Arabic, Fiqh, Hadith, Shia Islamic studies, learn Quran online" />
+    <link rel="canonical" href="https://starshiaquranacademy.com/courses.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shia Quran Courses – Star Shia Quran Academy" />
+    <meta property="og:description" content="Wide range of Shia Quran courses including Tajweed, Tafseer, Arabic, Fiqh, and more. Learn from certified Shia scholars." />
+    <meta property="og:url" content="https://starshiaquranacademy.com/courses.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://starshiaquranacademy.com/images/courses/og-courses.jpg" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Courses at Star Shia Quran Academy",
+            "description": "A comprehensive list of courses offered by the leading Shia Quran Academy, covering Tajweed, Tafseer, Arabic, Islamic studies, and more.",
+            "url": "https://starshiaquranacademy.com/courses.html",
+            "about": {
+                "@type": "EducationalOrganization",
+                "name": "Star Shia Quran Academy"
+            }
+        }
+    </script>
+
+    <!-- Fonts & Global CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/courses.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER (same as homepage) ===== -->
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo/star-shia-logo.avif" alt="Star Shia Quran Academy Logo" width="180" height="50" />
+                    <span class="logo-text">Star<span>Shia</span> Quran Academy</span>
+                </a>
+            </div>
+            <nav class="main-nav" role="navigation">
+                <ul class="nav-list" id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== COURSES HERO ===== -->
+    <section class="courses-hero" aria-labelledby="coursesHeroTitle" style="background-image: url('images/hero/courses-hero-bg.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+
+    <!-- Add this overlay div right after the section opening -->
+    <div class="courses-hero-overlay"></div>
+        <div class="container courses-hero-inner">
+            <div class="courses-hero-content">
+                <span class="section-tag">Our Programs</span>
+                <h1 id="coursesHeroTitle">Explore Our <span>Shia Quran &amp; Islamic Studies</span> Courses</h1>
+                <p class="courses-hero-desc">
+                    Choose from a wide range of courses designed to deepen your understanding of the Quran
+                    and Islamic sciences, all taught by certified Shia scholars.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FILTER & COURSE GRID ===== -->
+    <section class="course-listing" aria-labelledby="courseListTitle">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="categoryFilter"><i class="fas fa-filter"></i> Filter by Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="quran">Quranic Studies</option>
+                        <option value="arabic">Arabic Language</option>
+                        <option value="islamic">Islamic Studies</option>
+                        <option value="fiqh-hadith">Fiqh &amp; Hadith</option>
+                        <option value="spiritual">Spiritual &amp; Duas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="levelFilter"><i class="fas fa-layer-group"></i> Level:</label>
+                    <select id="levelFilter">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="filter-result-count" id="resultCount">Showing 0 courses</div>
+            </div>
+
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION (same as homepage) ===== -->
+    <section class="cta-section" aria-labelledby="ctaTitleCourses">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <span class="section-tag light">Start Learning</span>
+                    <h2 id="ctaTitleCourses">Ready to <span>Enroll</span> in a Course?</h2>
+                    <p>Contact us to schedule a free trial class with one of our certified Shia teachers.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="teachers.html" class="btn btn-outline light">Meet Our Teachers</a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="images/cta/courses-cta-students.webp" alt="Students at Star Shia Quran Academy" width="400" height="280" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER (same as homepage) ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/logo/star-shia-logo-white.avif" alt="Star Shia Quran Academy" width="160" height="45" loading="lazy" />
+                            <span>Star<span>Shia</span> Quran Academy</span>
+                        </a>
+                    </div>
+                    <p>The premier online <strong>Shia Quran Academy</strong> offering authentic Quran tutoring with Tajweed, Tafseer, Arabic, and Islamic studies.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="teachers.html">Teachers</a></li>
+                         <li><a href="fees.html">Fees</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="course-detail.html?id=tajweed">Quran Tajweed</a></li>
+                        <li><a href="course-detail.html?id=tafseer">Tafseer &amp; Exegesis</a></li>
+                        <li><a href="course-detail.html?id=arabic">Arabic for Quran</a></li>
+                        <li><a href="course-detail.html?id=fiqh">Shia Fiqh</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> starshiaquranacademy@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +92 346 0057405</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Online – Worldwide</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>Star Shia Quran Academy</strong>. All rights reserved.</p>
+                <p class="footer-credit">
+                    <a href="privacy-policy.html">Privacy Policy</a> &bull;
+                    <a href="terms.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/script.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

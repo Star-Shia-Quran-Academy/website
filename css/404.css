@@ -1,0 +1,279 @@
+/* ==============================================================
+   404.css – Star Shia Quran Academy (Error Page)
+   ============================================================== */
+
+/* ---------- ERROR SECTION ---------- */
+.error-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f4ed 0%, #f0ebe1 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.error-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ---------- Large 404 Number ---------- */
+.error-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Amiri', serif;
+    font-size: clamp(5rem, 15vw, 10rem);
+    font-weight: 800;
+    color: #2a6b3b;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 8px 30px rgba(42, 107, 59, 0.15);
+}
+
+.error-number span {
+    display: inline-block;
+    animation: floatNumber 3s ease-in-out infinite;
+}
+
+.error-number span:last-child {
+    animation-delay: 0.5s;
+}
+
+.error-number i {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #b8860b;
+    animation: pulseIcon 2s ease-in-out infinite;
+}
+
+@keyframes floatNumber {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulseIcon {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.85;
+    }
+}
+
+/* ---------- Error Content ---------- */
+.error-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0.5rem 0 1rem;
+    color: #1e1e2a;
+}
+
+.error-content h1 span {
+    color: #b8860b;
+}
+
+.error-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #3d3d4e;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* ---------- Action Buttons ---------- */
+.error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.error-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+}
+
+.error-actions .btn i {
+    font-size: 1.1rem;
+}
+
+/* ---------- Quick Links Grid ---------- */
+.error-links {
+    margin-bottom: 3rem;
+}
+
+.error-links h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #1e1e2a;
+    font-family: 'Amiri', serif;
+}
+
+.error-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.error-link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    color: #1e1e2a;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.error-link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    background: #2a6b3b;
+    color: #fff;
+}
+
+.error-link-card i {
+    font-size: 1.8rem;
+    color: #b8860b;
+    transition: color 0.3s ease;
+}
+
+.error-link-card:hover i {
+    color: #f5e6c8;
+}
+
+/* ---------- Popular Courses ---------- */
+.error-popular {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.error-popular h3 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    color: #1e1e2a;
+    font-family: 'Amiri', serif;
+}
+
+.error-popular ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+}
+
+.error-popular ul li a {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: #f8f4ed;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    color: #2a6b3b;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.error-popular ul li a:hover {
+    background: #2a6b3b;
+    color: #fff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .error-section {
+        padding: 3rem 0;
+        min-height: 50vh;
+    }
+
+    .error-number {
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .error-desc {
+        font-size: 1rem;
+    }
+
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .error-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .error-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .error-link-card {
+        padding: 1.2rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .error-link-card i {
+        font-size: 1.5rem;
+    }
+
+    .error-popular {
+        padding: 1.5rem 1rem;
+    }
+
+    .error-popular ul {
+        gap: 0.6rem;
+    }
+
+    .error-popular ul li a {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-number {
+        gap: 0.5rem;
+        font-size: 4.5rem;
+    }
+
+    .error-number i {
+        font-size: 2.5rem;
+    }
+
+    .error-links-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .error-content h1 {
+        font-size: 1.8rem;
+    }
+}
