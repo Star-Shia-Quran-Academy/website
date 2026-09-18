@@ -1,6 +1,6 @@
 # ==============================================================
 # robots.txt – Star Shia Quran Academy
-# https://starshiaquranacademy.com
+# https://website-red-xi-21.vercel.app
 # ==============================================================
 
 # Allow all search engine crawlers to index the entire site
