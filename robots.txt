@@ -26,7 +26,7 @@ Allow: /privacy-policy.html
 Allow: /terms-of-service.html
 
 # Sitemap location
-Sitemap: https://starshiaquranacademy.com/sitemap.xml
+Sitemap: https://website-red-xi-21.vercel.app/sitemap.xml
 
 # Crawl delay (in seconds) – be polite to servers
 Crawl-delay: 1

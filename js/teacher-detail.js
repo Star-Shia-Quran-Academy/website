@@ -145,8 +145,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.title = `${teacher.name} – Star Shia Quran Academy`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute('content', `Learn about ${teacher.name}, ${teacher.title} at Star Shia Quran Academy. ${teacher.bio}`);
-    }
+    // Create SEO-rich description with teacher details
+    const dynamicDesc = `Learn from ${teacher.name}, ${teacher.title} at Star Shia Quran Academy. ${teacher.experience} experience, ${teacher.studentsTaught} students taught. Enroll today!`;
+    metaDesc.setAttribute('content', dynamicDesc.substring(0, 160));
+}
 
     // Build the detail HTML
     const specialtiesHtml = teacher.specialties.map(s => `<li>${s}</li>`).join('');

@@ -168,9 +168,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update page title & meta
     document.title = `${post.title} – Star Shia Quran Academy`;
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-        metaDesc.setAttribute('content', post.excerpt);
-    }
+   if (metaDesc) {
+    // Use excerpt + author + academy name for SEO
+    const dynamicDesc = `${post.excerpt} By ${post.author} at Star Shia Quran Academy.`;
+    metaDesc.setAttribute('content', dynamicDesc.substring(0, 160));
+}
 
     // ----- Build the article HTML (UPDATED author avatar line) -----
     const html = `

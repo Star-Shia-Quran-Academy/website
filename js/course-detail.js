@@ -691,8 +691,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.title = `${course.title} – Star Shia Quran Academy`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute('content', `${course.shortDesc} Enroll now at Star Shia Quran Academy.`);
-    }
+    // Create SEO-rich description with course details
+    const dynamicDesc = `${course.shortDesc} ${course.duration} course with ${course.instructor} at Star Shia Quran Academy. Enroll today!`;
+    metaDesc.setAttribute('content', dynamicDesc.substring(0, 160));
+}
 
     // Build the detail HTML
     const highlightsHtml = course.highlights.map(h => `<li><i class="fas fa-check-circle"></i> ${h}</li>`).join('');
