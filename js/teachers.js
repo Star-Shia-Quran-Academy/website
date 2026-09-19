@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h3>${teacher.name}</h3>
                         <span class="teacher-title">${teacher.title}</span>
                         <p>${teacher.bio}</p>
-                        <a href="teacher-detail.html?id=${teacher.id}" class="btn btn-outline btn-sm">View Profile <i class="fas fa-arrow-right"></i></a>
+                        <a href="teacher-detail.html?id=${teacher.id}" class="btn btn-outline btn-sm">View ${teacher.name} <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             `;

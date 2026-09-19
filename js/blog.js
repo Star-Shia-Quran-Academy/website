@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <span><i class="far fa-user"></i> ${post.author}</span>
                         </div>
                         <p>${post.excerpt}</p>
-                        <a href="blog-detail.html?id=${post.id}" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                        <a href="blog-detail.html?id=${post.id}" class="btn btn-outline btn-sm">Read This Article <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             `;

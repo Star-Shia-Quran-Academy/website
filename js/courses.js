@@ -707,7 +707,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <span><i class="fas fa-user-graduate"></i> ${course.instructor}</span>
                         </div>
                         <p>${course.shortDesc}</p>
-                        <a href="course-detail.html?id=${course.id}" class="btn btn-outline btn-sm">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="course-detail.html?id=${course.id}" class="btn btn-outline btn-sm">View ${course.title} <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             `;
