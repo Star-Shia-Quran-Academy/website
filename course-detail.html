@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-94YWW6T8WW"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-94YWW6T8WW');
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/logo/star-shia-logo.avif" type="image/avif" />
@@ -59,7 +50,7 @@
         <div class="container header-inner">
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo/star-shia-logo.avif" alt="Star Shia Quran Academy Logo" width="180" height="50" />
+                    <img src="images/logo/star-shia-logo.avif" alt="Star Shia Quran Academy Logo" width="40" height="40" loading="eager" fetchpriority="high" />
                     <span class="logo-text">Star<span>Shia</span> Quran Academy</span>
                 </a>
             </div>
@@ -120,7 +111,7 @@
                 <div class="footer-col">
                     <div class="footer-logo">
                         <a href="index.html">
-                            <img src="images/logo/star-shia-logo-white.avif" alt="Star Shia Quran Academy" width="160" height="45" loading="lazy" />
+                            <img src="images/logo/star-shia-logo.avif" alt="Star Shia Quran Academy Logo" width="40" height="40" loading="eager" fetchpriority="high" />
                             <span>Star<span>Shia</span> Quran Academy</span>
                         </a>
                     </div>
@@ -185,7 +176,32 @@
 </a>
 
     <!-- ===== SCRIPTS ===== -->
-    <script src="js/script.js"></script>
-    <script src="js/course-detail.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/course-detail.js" defer></script>
+
+    <!-- Google tag (gtag.js) – Deferred for performance -->
+<script>
+    (function() {
+        function loadGTM() {
+            var script = document.createElement('script');
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-94YWW6T8WW';
+            script.async = true;
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-94YWW6T8WW');
+        }
+        
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadGTM, { timeout: 3000 });
+        } else {
+            window.addEventListener('load', function() {
+                setTimeout(loadGTM, 100);
+            });
+        }
+    })();
+</script>
 </body>
 </html>
