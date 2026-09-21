@@ -44,10 +44,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" />
+    </noscript>
 
     <!-- Font Awesome 6 (free) -->
-    <script src="https://kit.fontawesome.com/69e3ba6e1b.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/69e3ba6e1b.js" crossorigin="anonymous"></script>
 
     <link rel="preload" as="image" href="images/hero/hero-quran-study.webp" fetchpriority="high" />
 
@@ -145,7 +149,7 @@
         <div class="container">
             <div class="about-brief-grid">
                 <div class="about-brief-image">
-                    <img src="images/about/about-academy.webp" alt="Star Shia Quran Academy – online learning" width="600" height="400" loading="lazy" />
+                    <img src="images/about/about-academy.webp" alt="Star Shia Quran Academy – online learning" width="400" height="600" loading="lazy" />
                 </div>
                 <div class="about-brief-content">
                     <span class="section-tag">About Us</span>
