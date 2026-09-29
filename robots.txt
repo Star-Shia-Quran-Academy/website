@@ -1,6 +1,6 @@
 # ==============================================================
 # robots.txt – Star Shia Quran Academy
-# https://website-red-xi-21.vercel.app
+# https://starshiaquranacademy.com
 # ==============================================================
 
 # Allow all search engine crawlers to index the entire site
@@ -26,7 +26,7 @@ Allow: /privacy-policy.html
 Allow: /terms-of-service.html
 
 # Sitemap location
-Sitemap: https://website-red-xi-21.vercel.app/sitemap.xml
+Sitemap: https://starshiaquranacademy.com/sitemap.xml
 
 # Crawl delay (in seconds) – be polite to servers
 Crawl-delay: 1

@@ -107,8 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 successDiv.style.display = 'block';
                 successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 
-                // Log success
-                console.log('Form submitted successfully:', data);
+                
             })
             .catch(error => {
                 // Error
